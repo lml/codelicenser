@@ -2,8 +2,7 @@ codelicenser
 ============
 
 Running codelicenser.pl
-=======================
-=======================
+-----------------------
 
 This script adds or removes license text from files in the codebase
 containing the script, the code must be loaded on the top directory.
