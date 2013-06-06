@@ -17,22 +17,23 @@ By default, the root directory of the codebase is assumed to be *BASEDIR* (this 
 
 By default, the License Agreement will be inserted (per Regex-Param Pairs) into files in which it is not already present.
 
-The following command-line arguments can be given:
+*The following command-line arguments can be given:*
 
+**Removes** the License Agreement from files in the codebase, if present.  
     -r[emove]
-Removes the License Agreement from files in the codebase, if present.
 
+**Help** function, pulls up this text.  
     -h[elp]
-Pulls up this usage text.
 
+Generates a **New** config.license_tool file.  
     -n[ew]
-Generates a new config.license_tool file.
 
-    -m[essage] [\"Text\"]
-Custom message to insert after License Agreement for all files. If running this code via piping (as in the **Recommended Usage**) the \"Text\" must be included, code will be unable to catch error.
+Custom **Message** to insert after License Agreement for all files. If running this code via piping (as in the **Recommended Usage**) the "Text" must be included, code will be unable to catch error.  
+    -m[essage] ["Text"]
 
+**Views** the file name(s) and associated information about how the file(s) were processed.  
     -v[iew]
-Displays the file name(s) and associated information about how the file(s) were processed.
+
 
 Modifying config.license_tool
 -----------------------------
