@@ -55,7 +55,7 @@ Appropriate commenting and 'pretty' formatting is done to each filename processe
 
 ###Regex-Param Pairs
 *Making new patterns/parameters:*
-		pass(Inline, BlockS, BlockI, BlockE, Skip, Before, After)
+    pass(Inline, BlockS, BlockI, BlockE, Skip, Before, After)
 	
 + **Inline** is appended to every line of License Agreement
 + **BlockS** is appended to the first line of License Agreement
@@ -66,42 +66,43 @@ Appropriate commenting and 'pretty' formatting is done to each filename processe
 + **After** is number of lines to insert immediately after License Agreement
 
 *To Ignore filetypes:*
+
 Use **'Noop'** instead of a **'pass()'** parameter.
 
 *Sample parameters for filetypes:*
 	
-	**Coffee**		use inline '# '
-				pass('# ', '', '', '', 0, 0, 2)
+**Coffee**		use inline '# '
+    pass('# ', '', '', '', 0, 0, 2)
 
-	**Css**			use block '/* ... */' with intermediate ' * '
-				pass('', '/* ', ' * ', ' */', 0, 0, 2)
+**Css**			use block '/* ... */' with intermediate ' * '
+    pass('', '/* ', ' * ', ' */', 0, 0, 2)
 
-	**Erb**			use block '<%# ... %>'
-				pass('', '<%# ', '', '%>', 0, 0, 2)
+**Erb**			use block '<%# ... %>'
+    pass('', '<%# ', '', '%>', 0, 0, 2)
 
-	**JavsScript**	use inline '// '
-				pass('// ', '', '', '', 0, 0, 2)
+**JavsScript**	use inline '// '
+    pass('// ', '', '', '', 0, 0, 2)
 
-	**Latex**		use inline '% '
-				pass('% ', '', '', '', 0, 0, 2)
+**Latex**		use inline '% '
+    pass('% ', '', '', '', 0, 0, 2)
 
-	**PerlModule**	use inline '# '
-				pass('# ', '', '', '', 0, 0, 2)
+**PerlModule**	use inline '# '
+    pass('# ', '', '', '', 0, 0, 2)
 
-	**Rake**		use inline '# '
-				pass('# ', '', '', '', 0, 0, 2)
+**Rake**		use inline '# '
+    pass('# ', '', '', '', 0, 0, 2)
 
-	**Ruby**		use inline '# '
-				pass('# ', '', '', '', 0, 0, 2)
+**Ruby**		use inline '# '
+    pass('# ', '', '', '', 0, 0, 2)
 
-	**Script**		use inline '# ' after skipping first line
-				pass('# ', '', '', '', 1, 2, 2)
+**Script**		use inline '# ' after skipping first line
+    pass('# ', '', '', '', 1, 2, 2)
 
-	**Scss**		use inline '// '
-				pass('// ', '', '', '', 0, 0, 2)
+**Scss**		use inline '// '
+    pass('// ', '', '', '', 0, 0, 2)
 
-	**Text**		use inline '# '
-				pass('# ', '', '', '', 0, 0, 2)
+**Text**		use inline '# '
+    pass('# ', '', '', '', 0, 0, 2)
 
-	**Yaml**		use inline '# '
-				pass('# ', '', '', '', 0, 0, 2)
+**Yaml**		use inline '# '
+    pass('# ', '', '', '', 0, 0, 2)
