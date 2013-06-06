@@ -55,15 +55,15 @@ Appropriate commenting and 'pretty' formatting is done to each filename processe
 
 ###Regex-Param Pairs
 *Making new patterns/parameters:*
-	pass(Inline, BlockS, BlockI, BlockE, Skip, Before, After)
+		pass(Inline, BlockS, BlockI, BlockE, Skip, Before, After)
 	
-+**Inline** is appended to every line of License Agreement
-+**BlockS** is appended to the first line of License Agreement
-+**BlockI** is appended to all lines that are not first of License Agreement
-+**BlockE** is appended after last line of License Agreement
-+**Skip** is number of lines to skip before any insertion
-+**Before** is number of lines to insert immediately before License Agreement
-+**After** is number of lines to insert immediately after License Agreement
++ **Inline** is appended to every line of License Agreement
++ **BlockS** is appended to the first line of License Agreement
++ **BlockI** is appended to all lines that are not first of License Agreement
++ **BlockE** is appended after last line of License Agreement
++ **Skip** is number of lines to skip before any insertion
++ **Before** is number of lines to insert immediately before License Agreement
++ **After** is number of lines to insert immediately after License Agreement
 
 *To Ignore filetypes:*
 Use **'Noop'** instead of a **'pass()'** parameter.
