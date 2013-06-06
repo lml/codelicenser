@@ -30,13 +30,16 @@ By default, the License Agreement will be inserted (per Regex-Param Pairs) into 
 
 + Generates a **New** config.license_tool file.
 
+
     -n[ew]
 
 + Custom **Message** to insert after License Agreement for all files. If running this code via piping (as in the **Recommended Usage**) the "Text" must be included, code will be unable to catch error.
 
+
     -m\[essage\] ["Text"]
 
 + **Views** the file name(s) and associated information about how the file(s) were processed.
+
 
     -v[iew]
 
