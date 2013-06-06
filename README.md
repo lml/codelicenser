@@ -20,19 +20,19 @@ By default, the License Agreement will be inserted (per Regex-Param Pairs) into 
 The following command-line arguments can be given:
 
     -r[emove]
-        Removes the License Agreement from files in the codebase, if present.
+Removes the License Agreement from files in the codebase, if present.
 
     -h[elp]
-    	Pulls up this usage text.
+Pulls up this usage text.
 
     -n[ew]
-    	Generates a new config.license_tool file.
+Generates a new config.license_tool file.
 
     -m[essage] [\"Text\"]
-    	Custom message to insert after License Agreement for all files. If running this code via piping (as in the **Recommended Usage**) the \"Text\" must be included, code will be unable to catch error.
+Custom message to insert after License Agreement for all files. If running this code via piping (as in the **Recommended Usage**) the \"Text\" must be included, code will be unable to catch error.
 
     -v[iew]
-    	Displays the file name(s) and associated information about how the file(s) were processed.
+Displays the file name(s) and associated information about how the file(s) were processed.
 
 Modifying config.license_tool
 -----------------------------
