@@ -89,7 +89,7 @@ Use **'Noop'** instead of a **'pass()'** parameter.
 
 + **Erb**		use block '<%# ... %>'
 
-<pre><code>pass('', '<%# ', '', '%>', 0, 0, 2)</code></pre>
+<pre><code>pass('', '<pre><</pre>%# ', '', '%>', 0, 0, 2)</code></pre>
 
 + **JavsScript**		use inline '// '
 
