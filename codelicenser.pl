@@ -469,7 +469,7 @@ sub makeNewConfig {
 ###############################################################################
 # 
 # config.license_tool (this file) omitted by default
-# the perl code (default: codelicenser.pl) omitted by default
+# the perl code (default: codelicense.pl) omitted by default
 # 
 ###############################################################################
 
