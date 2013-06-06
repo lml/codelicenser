@@ -22,8 +22,8 @@ By default, the License Agreement will be inserted (per Regex-Param Pairs) into 
 
 + **Removes** the License Agreement from files in the codebase, if present.
 
-'<pre><code>-r[emove]
-</code></pre>'
+<code>-r[emove]
+</code>
 
 + **Help** function, pulls up this text.
 
