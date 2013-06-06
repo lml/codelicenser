@@ -81,48 +81,48 @@ Use **'Noop'** instead of a **'pass()'** parameter.
 	
 + **Coffee**		use inline '# '
 
-    pass('# ', '', '', '', 0, 0, 2)
+<pre><code>pass('# ', '', '', '', 0, 0, 2)</code></pre>
 
 + **Css**		use block '/* ... */' with intermediate ' * '
 
-    pass('', '/* ', ' * ', ' */', 0, 0, 2)
+<pre><code>pass('', '/* ', ' * ', ' */', 0, 0, 2)</code></pre>
 
 + **Erb**		use block '<%# ... %>'
 
-    pass('', '<%# ', '', '%>', 0, 0, 2)
+<pre><code>pass('', '<%# ', '', '%>', 0, 0, 2)</code></pre>
 
 + **JavsScript**		use inline '// '
 
-    pass('// ', '', '', '', 0, 0, 2)
+<pre><code>pass('// ', '', '', '', 0, 0, 2)</code></pre>
 
 + **Latex**		use inline '% '
 
-    pass('% ', '', '', '', 0, 0, 2)
+<pre><code>pass('% ', '', '', '', 0, 0, 2)</code></pre>
 
 + **PerlModule**		use inline '# '
 
-    pass('# ', '', '', '', 0, 0, 2)
+<pre><code>pass('# ', '', '', '', 0, 0, 2)</code></pre>
 
 + **Rake**		use inline '# '
 
-    pass('# ', '', '', '', 0, 0, 2)
+<pre><code>pass('# ', '', '', '', 0, 0, 2)</code></pre>
 
 + **Ruby**		use inline '# '
 
-    pass('# ', '', '', '', 0, 0, 2)
+<pre><code>pass('# ', '', '', '', 0, 0, 2)</code></pre>
 
 + **Script**		use inline '# ' after skipping first line
 
-    pass('# ', '', '', '', 1, 2, 2)
+<pre><code>pass('# ', '', '', '', 1, 2, 2)</code></pre>
 
 + **Scss**		use inline '// '
 
-    pass('// ', '', '', '', 0, 0, 2)
+<pre><code>pass('// ', '', '', '', 0, 0, 2)</code></pre>
 
 + **Text**		use inline '# '
 
-    pass('# ', '', '', '', 0, 0, 2)
+<pre><code>pass('# ', '', '', '', 0, 0, 2)</code></pre>
 
 + **Yaml**		use inline '# '
 
-    pass('# ', '', '', '', 0, 0, 2)
+<pre><code>pass('# ', '', '', '', 0, 0, 2)</code></pre>
