@@ -67,12 +67,9 @@ sub initAndControl
 			my $next = $args[$i + 1];
 			my $found = 0;
 
-			print STDOUT ("---------the next arg is $next\n\n");
-
 			# Message provided
 			if (defined($next)) {
 				if ($next !~ m/^-/) {
-					print STDOUT ("here\n");
 					$found = 1;
 					$i++;
 					$setup->{message} = $next;
