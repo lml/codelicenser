@@ -89,7 +89,8 @@ Use **'Noop'** instead of a **'pass()'** parameter.
 **PerlModule**	use inline '# '
     pass('# ', '', '', '', 0, 0, 2)
 
-**Rake**		use inline '# '
+**Rake**	use inline '# '
+
     pass('# ', '', '', '', 0, 0, 2)
 
 **Ruby**		use inline '# '
