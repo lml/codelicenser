@@ -6,8 +6,8 @@ This script adds or removes license text from files in the codebase containing t
 Running codelicenser.pl
 -----------------------
 
-    **Recommended Usage:**
-    	curl -s https://raw.github.com/lml/codelicenser/master/codelicenser.pl | perl - [-r] [-h] [-n] [-m] [\"Text\"] [-v]
+**Recommended Usage:**
+	curl -s https://raw.github.com/lml/codelicenser/master/codelicenser.pl | perl - [-r] [-h] [-n] [-m] [\"Text\"] [-v]
 
 By default, the License Agreement found in the config.license_tool file on the *BASEDIR* will be used as the license text to be inserted or removed.
 
@@ -53,57 +53,55 @@ For each filename processed, this config.license_tool is scanned. The first Rege
 
 Appropriate commenting and 'pretty' formatting is done to each filename processed.
 
-	**Regex-Param Pairs**
-
-	*Making new patterns/parameters:*
+###Regex-Param Pairs
+*Making new patterns/parameters:*
+	pass(Inline, BlockS, BlockI, BlockE, Skip, Before, After)
 	
-		pass(Inline, BlockS, BlockI, BlockE, Skip, Before, After)
++**Inline** is appended to every line of License Agreement
++**BlockS** is appended to the first line of License Agreement
++**BlockI** is appended to all lines that are not first of License Agreement
++**BlockE** is appended after last line of License Agreement
++**Skip** is number of lines to skip before any insertion
++**Before** is number of lines to insert immediately before License Agreement
++**After** is number of lines to insert immediately after License Agreement
+
+*To Ignore filetypes:*
+Use **'Noop'** instead of a **'pass()'** parameter.
+
+*Sample parameters for filetypes:*
 	
-	Inline is appended to every line of License Agreement
-	BlockS is appended to the first line of License Agreement
-	BlockI is appended to all lines that are not first of License Agreement
-	BlockE is appended after last line of License Agreement
-	Skip is number of lines to skip before any insertion
-	Before is number of lines to insert immediately before License Agreement
-	After is number of lines to insert immediately after License Agreement
+	**Coffee**		use inline '# '
+				pass('# ', '', '', '', 0, 0, 2)
 
-	*To Ignore filetypes:*
-		Use **'Noop'** instead of a **'pass()'** parameter.
+	**Css**			use block '/* ... */' with intermediate ' * '
+				pass('', '/* ', ' * ', ' */', 0, 0, 2)
 
-	*Sample parameters for filetypes:*
-	
-		**Coffee**		use inline '# '
-					pass('# ', '', '', '', 0, 0, 2)
+	**Erb**			use block '<%# ... %>'
+				pass('', '<%# ', '', '%>', 0, 0, 2)
 
-		**Css**			use block '/* ... */' with intermediate ' * '
-					pass('', '/* ', ' * ', ' */', 0, 0, 2)
+	**JavsScript**	use inline '// '
+				pass('// ', '', '', '', 0, 0, 2)
 
-		**Erb**			use block '<%# ... %>'
-					pass('', '<%# ', '', '%>', 0, 0, 2)
+	**Latex**		use inline '% '
+				pass('% ', '', '', '', 0, 0, 2)
 
-		**JavsScript**	use inline '// '
-					pass('// ', '', '', '', 0, 0, 2)
+	**PerlModule**	use inline '# '
+				pass('# ', '', '', '', 0, 0, 2)
 
-		**Latex**		use inline '% '
-					pass('% ', '', '', '', 0, 0, 2)
+	**Rake**		use inline '# '
+				pass('# ', '', '', '', 0, 0, 2)
 
-		**PerlModule**	use inline '# '
-					pass('# ', '', '', '', 0, 0, 2)
+	**Ruby**		use inline '# '
+				pass('# ', '', '', '', 0, 0, 2)
 
-		**Rake**		use inline '# '
-					pass('# ', '', '', '', 0, 0, 2)
+	**Script**		use inline '# ' after skipping first line
+				pass('# ', '', '', '', 1, 2, 2)
 
-		**Ruby**		use inline '# '
-					pass('# ', '', '', '', 0, 0, 2)
+	**Scss**		use inline '// '
+				pass('// ', '', '', '', 0, 0, 2)
 
-		**Script**		use inline '# ' after skipping first line
-					pass('# ', '', '', '', 1, 2, 2)
+	**Text**		use inline '# '
+				pass('# ', '', '', '', 0, 0, 2)
 
-		**Scss**		use inline '// '
-					pass('// ', '', '', '', 0, 0, 2)
-
-		**Text**		use inline '# '
-					pass('# ', '', '', '', 0, 0, 2)
-
-		**Yaml**		use inline '# '
-					pass('# ', '', '', '', 0, 0, 2)
+	**Yaml**		use inline '# '
+				pass('# ', '', '', '', 0, 0, 2)
