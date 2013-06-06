@@ -55,6 +55,7 @@ Appropriate commenting and 'pretty' formatting is done to each filename processe
 
 ###Regex-Param Pairs
 *Making new patterns/parameters:*
+
     pass(Inline, BlockS, BlockI, BlockE, Skip, Before, After)
 	
 + **Inline** is appended to every line of License Agreement
@@ -72,21 +73,27 @@ Use **'Noop'** instead of a **'pass()'** parameter.
 *Sample parameters for filetypes:*
 	
 **Coffee**		use inline '# '
+
     pass('# ', '', '', '', 0, 0, 2)
 
 **Css**			use block '/* ... */' with intermediate ' * '
+
     pass('', '/* ', ' * ', ' */', 0, 0, 2)
 
 **Erb**			use block '<%# ... %>'
+
     pass('', '<%# ', '', '%>', 0, 0, 2)
 
 **JavsScript**	use inline '// '
+
     pass('// ', '', '', '', 0, 0, 2)
 
 **Latex**		use inline '% '
+
     pass('% ', '', '', '', 0, 0, 2)
 
 **PerlModule**	use inline '# '
+
     pass('# ', '', '', '', 0, 0, 2)
 
 **Rake**	use inline '# '
@@ -94,16 +101,21 @@ Use **'Noop'** instead of a **'pass()'** parameter.
     pass('# ', '', '', '', 0, 0, 2)
 
 **Ruby**		use inline '# '
+
     pass('# ', '', '', '', 0, 0, 2)
 
 **Script**		use inline '# ' after skipping first line
+
     pass('# ', '', '', '', 1, 2, 2)
 
 **Scss**		use inline '// '
+
     pass('// ', '', '', '', 0, 0, 2)
 
 **Text**		use inline '# '
+
     pass('# ', '', '', '', 0, 0, 2)
 
 **Yaml**		use inline '# '
+
     pass('# ', '', '', '', 0, 0, 2)
