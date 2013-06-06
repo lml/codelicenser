@@ -8,7 +8,7 @@ Running codelicenser.pl
 
 **Recommended Usage:**
 
-    curl -s https://raw.github.com/lml/codelicenser/master/codelicenser.pl | perl - [-r] [-h] [-n] [-m] [\"Text\"] [-v]
+    curl -s https://raw.github.com/lml/codelicenser/master/codelicenser.pl | perl - [-r] [-h] [-n] [-m] ["Text"] [-v]
 
 By default, the License Agreement found in the config.license_tool file on the *BASEDIR* will be used as the license text to be inserted or removed.
 
@@ -79,50 +79,50 @@ Use **'Noop'** instead of a **'pass()'** parameter.
 
 *Sample parameters for filetypes:*
 	
-**Coffee**\t\tuse inline '# '
++ **Coffee**		use inline '# '
 
     pass('# ', '', '', '', 0, 0, 2)
 
-**Css**			use block '/* ... */' with intermediate ' * '
++ **Css**		use block '/* ... */' with intermediate ' * '
 
     pass('', '/* ', ' * ', ' */', 0, 0, 2)
 
-**Erb**			use block '<%# ... %>'
++ **Erb**		use block '<%# ... %>'
 
     pass('', '<%# ', '', '%>', 0, 0, 2)
 
-**JavsScript**	use inline '// '
++ **JavsScript**		use inline '// '
 
     pass('// ', '', '', '', 0, 0, 2)
 
-**Latex**		use inline '% '
++ **Latex**		use inline '% '
 
     pass('% ', '', '', '', 0, 0, 2)
 
-**PerlModule**	use inline '# '
++ **PerlModule**		use inline '# '
 
     pass('# ', '', '', '', 0, 0, 2)
 
-**Rake**	use inline '# '
++ **Rake**		use inline '# '
 
     pass('# ', '', '', '', 0, 0, 2)
 
-**Ruby**		use inline '# '
++ **Ruby**		use inline '# '
 
     pass('# ', '', '', '', 0, 0, 2)
 
-**Script**		use inline '# ' after skipping first line
++ **Script**		use inline '# ' after skipping first line
 
     pass('# ', '', '', '', 1, 2, 2)
 
-**Scss**		use inline '// '
++ **Scss**		use inline '// '
 
     pass('// ', '', '', '', 0, 0, 2)
 
-**Text**		use inline '# '
++ **Text**		use inline '# '
 
     pass('# ', '', '', '', 0, 0, 2)
 
-**Yaml**		use inline '# '
++ **Yaml**		use inline '# '
 
     pass('# ', '', '', '', 0, 0, 2)
