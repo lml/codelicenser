@@ -22,27 +22,23 @@ By default, the License Agreement will be inserted (per Regex-Param Pairs) into 
 
 + **Removes** the License Agreement from files in the codebase, if present.
 
-<code>-r[emove]
-</code>
+<pre><code>-r[emove]</code></pre>
 
 + **Help** function, pulls up this text.
 
-    -h[elp]
+<pre><code>-h[elp]</code></pre>
 
 + Generates a **New** config.license_tool file.
 
-
-    -n[ew]
+<pre><code>-n[ew]</code></pre>
 
 + Custom **Message** to insert after License Agreement for all files. If running this code via piping (as in the **Recommended Usage**) the "Text" must be included, code will be unable to catch error.
 
-
-    -m\[essage\] ["Text"]
+<pre><code>-m\[essage\] ["Text"]</code></pre>
 
 + **Views** the file name(s) and associated information about how the file(s) were processed.
 
-
-    -v[iew]
+<pre><code>-v[iew]</code></pre>
 
 
 Modifying config.license_tool
