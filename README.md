@@ -19,19 +19,24 @@ By default, the License Agreement will be inserted (per Regex-Param Pairs) into 
 
 *The following command-line arguments can be given:*
 
-**Removes** the License Agreement from files in the codebase, if present.  
+**Removes** the License Agreement from files in the codebase, if present.
+
     -r[emove]
 
-**Help** function, pulls up this text.  
+**Help** function, pulls up this text.
+
     -h[elp]
 
-Generates a **New** config.license_tool file.  
+Generates a **New** config.license_tool file.
+
     -n[ew]
 
-Custom **Message** to insert after License Agreement for all files. If running this code via piping (as in the **Recommended Usage**) the "Text" must be included, code will be unable to catch error.  
+Custom **Message** to insert after License Agreement for all files. If running this code via piping (as in the **Recommended Usage**) the "Text" must be included, code will be unable to catch error.
+
     -m[essage] ["Text"]
 
-**Views** the file name(s) and associated information about how the file(s) were processed.  
+**Views** the file name(s) and associated information about how the file(s) were processed.
+
     -v[iew]
 
 
@@ -73,7 +78,7 @@ Use **'Noop'** instead of a **'pass()'** parameter.
 
 *Sample parameters for filetypes:*
 	
-**Coffee**		use inline '# '
+**Coffee**\t\tuse inline '# '
 
     pass('# ', '', '', '', 0, 0, 2)
 
